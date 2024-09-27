@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100&display=swap');
 
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: italic;
+}
+
 :root{
     --cinza-escuro: #1C1C1C;
     --cinza-ardosia: #2F2F2F;
@@ -16,12 +23,6 @@
     box-sizing: border-box;
 }
 
-.inter {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: italic;
-}
 
 html, body {
     height: 100%;
