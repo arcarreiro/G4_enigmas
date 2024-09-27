@@ -1,33 +1,19 @@
+/* zera o css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+/* estilos */
+@import 'css/botoes.css';
+@import 'css/fontes.css';
+@import 'css/links.css';
+@import 'css/modal.css';
+
+/* cores */
+@import 'css/cores.css';
+
 @import 'css/homestyle.css';
 @import 'css/sobrestyle.css';
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100&display=swap');
 
-.inter {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: italic;
-}
 
-button {
-    background-color: var(--padrao-botao);
-    border: var(--padrao-botao) 3px ridge;
-    padding: 8px;
-    border-color: #de9f20;
-    border-radius: 10px;
-    color: white;
-    font-family: 'Inter';
-    font-size: large;
-}
 
-a {
-    color: var(--vermelho-sangue);
-    text-decoration: none;
-}
-
-a:active {
-    color: white;
-    -webkit-text-stroke: 3px var(--vermelho-sangue);
-}

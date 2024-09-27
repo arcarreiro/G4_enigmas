@@ -1,0 +1,10 @@
+button {
+    background-color: var(--padrao-botao);
+    border: var(--padrao-botao) 3px ridge;
+    padding: 8px;
+    border-color: #de9f20;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Inter';
+    font-size: large;
+}
