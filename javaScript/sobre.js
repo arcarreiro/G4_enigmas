@@ -2,33 +2,33 @@ const artigos = [
     {
         nome: "Arthur Carreiro",
         descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px"></i></a>',
-        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px"></i></a>'
+        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px; color:#B22222"></i></a>',
+        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px; color:#B22222"></i></a>'
 
     },
     {
         nome: "Eber Cintra",
         descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px"></i></a>',
-        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px"></i></a>'
+        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px; color:#B22222"></i></a>',
+        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px; color:#B22222"></i></a>'
     },
     {
         nome: "Gabriel Bardasson",
         descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px"></i></a>',
-        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px"></i></a>'
+        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px; color:#B22222"></i></a>',
+        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px; color:#B22222"></i></a>'
     },
     {
         nome: "Gustavo Fernandes",
         descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px"></i></a>',
-        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px"></i></a>'
+        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px; color:#B22222"></i></a>',
+        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px; color:#B22222"></i></a>'
     },
     {
         nome: "Julio Braz",
         descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github"></i></a>',
-        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px"></i></a>'
+        github: '<a href="https://github.com/arcarreiro" target="_blank."rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 70px; color:#B22222"></i></a>',
+        linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank."rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 70px; color:#B22222"></i></a>'
     }
 ];
 
