@@ -1,0 +1,16 @@
+/* zera o css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+/* estilos */
+@import 'botoes.css';
+@import 'fontes.css';
+@import 'links.css';
+@import 'modal.css';
+
+/* cores */
+@import 'cores.css';
+
+
+
+
+
