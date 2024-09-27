@@ -1,5 +1,5 @@
-@import '../css/homestyle.css';
-
+@import 'css/homestyle.css';
+@import 'css/sobrestyle.css';
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100&display=swap');
@@ -20,4 +20,15 @@ button {
     color: white;
     font-family: 'Inter';
     font-size: large;
+}
+
+a {
+    color: var(--vermelho-sangue);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:active {
+    color: white;
+    -webkit-text-stroke: 3px var(--vermelho-sangue);
 }
