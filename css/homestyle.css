@@ -7,7 +7,7 @@
     font-style: italic;
 }
 
-:root{
+:root {
     --cinza-escuro: #1C1C1C;
     --cinza-ardosia: #2F2F2F;
     --vermelho-sangue: #ff2525;
@@ -17,14 +17,15 @@
     --padrao-botao: #672d21;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -65,7 +66,7 @@ footer {
     justify-content: center;
     width: 100%;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 #escritorio {
@@ -86,7 +87,7 @@ footer {
     border-top-left-radius: 10px;
 }
 
-#cabecalho{
+#cabecalho {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -100,13 +101,89 @@ footer {
     color: white;
 }
 
-.menu-superior{
+.menu-superior {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     list-style-type: none;
     margin-right: 1rem;
-    color:var(--vermelho-sangue);
+    color: var(--vermelho-sangue);
     font-size: x-large;
 }
 
+/* Fundo embaçado */
+#fundo-embaçado {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Efeito de embaçamento */
+    z-index: 999;
+}
+
+/* Modal de alerta */
+#alerta-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cinza-ardosia);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 1000;
+    width: 35rem;
+}
+
+.conteudo-modal {
+    text-align: center;
+}
+
+.header-modal {
+    color: var(--vermelho-sangue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#alerta-modal h2 {
+    margin: 0 0.5rem;
+}
+
+#alerta-modal p {
+    padding: 1rem;
+    background-color: #f1e5cb;
+    width: 100%;
+    margin: 1rem 0;
+    color: black;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+#seguir-aventura {
+    background-color: var(--padrao-botao);
+    border: var(--padrao-botao) 3px ridge;
+    padding: 8px;
+    border-color: #de9f20;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Inter';
+    font-size: large;
+}
+
+#fechar-modal-home {
+    border-radius: 50%;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+
+}
+
+#alerta-modal button:hover {
+    background-color: #0056b3;
+}
