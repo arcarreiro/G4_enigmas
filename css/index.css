@@ -1,30 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100&display=swap');
 
-.inter {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: italic;
-}
-
-:root{
-    --cinza-escuro: #1C1C1C;
-    --cinza-ardosia: #2F2F2F;
-    --vermelho-sangue: #ff2525;
-    --cinza-metalico: #A9A9A9;
-    --azul-petroleo: #2F4F4F;
-    --roxo-escuro: #4B0082;
-    --padrao-botao: #672d21;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -65,7 +41,7 @@ footer {
     justify-content: center;
     width: 100%;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 #escritorio {
@@ -86,7 +62,7 @@ footer {
     border-top-left-radius: 10px;
 }
 
-#cabecalho{
+#cabecalho {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -100,13 +76,12 @@ footer {
     color: white;
 }
 
-.menu-superior{
+.menu-superior {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     list-style-type: none;
     margin-right: 1rem;
-    color:var(--vermelho-sangue);
+    color: var(--vermelho-sangue);
     font-size: x-large;
 }
-

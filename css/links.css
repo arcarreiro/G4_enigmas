@@ -1,0 +1,9 @@
+a {
+    color: var(--vermelho-sangue);
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    -webkit-text-stroke: 3px var(--vermelho-sangue);
+}
