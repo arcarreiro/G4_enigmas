@@ -1,48 +1,5 @@
+@import 'paginas.css';
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-body {
-    background-color: var(--cinza-escuro);
-    font-family: 'Inter';
-}
-
-header {
-    height: 8rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer {
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-geral {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container-imagem {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
 
 #escritorio {
     height: 100%;
@@ -62,26 +19,4 @@ footer {
     border-top-left-radius: 10px;
 }
 
-#cabecalho {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-    background-color: var(--cinza-ardosia);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: white;
-}
 
-.menu-superior {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    list-style-type: none;
-    margin-right: 1rem;
-    color: var(--vermelho-sangue);
-    font-size: x-large;
-}
