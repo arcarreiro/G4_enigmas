@@ -1,10 +1,17 @@
-
-.inter {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: italic;
+button {
+    background-color: var(--padrao-botao);
+    border: var(--padrao-botao) 3px ridge;
+    padding: 1px;
+    border-color: #de9f20;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Inter';
+    font-size:small;
+    width: 120%;
+    height: 100%;
 }
+
+
 
 :root{
     --cinza-escuro: #1C1C1C;
@@ -44,10 +51,11 @@ header {
 
 footer {
     height: 5rem;
-    width: 100%;
+    width: 38rem;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .container-geral {
@@ -83,6 +91,7 @@ footer {
     background-color: var(--cinza-ardosia);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+ 
 }
 
 #cabecalho{
