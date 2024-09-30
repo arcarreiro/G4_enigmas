@@ -1,7 +1,7 @@
 let button = document.getElementById('comecar');
 let imagemFixa = '../assets/cemiterio.jpg';
-let imagemTransitoria = '../assets/escritorio2.jpg';
-let fundoTela = document.getElementById('escritorio');
+let imagemTransitoria = '../assets/cemiterio-lapide.jpg';
+let fundoTela = document.getElementById('lapide-ft');
 
 // highlight do arquivo
 button.addEventListener('mouseover', () => {
@@ -14,7 +14,7 @@ button.addEventListener('mouseout', () => {
 
 // redimensionamento do header e footer
 window.addEventListener('load', function () {
-    const imagem = document.getElementById('escritorio');
+    const imagem = document.getElementById('lapide');
     const rodape = document.getElementById('opcoes-home');
     const header = document.getElementById('cabecalho');
 
@@ -35,7 +35,7 @@ window.addEventListener('load', function () {
 
 //modal
 document.addEventListener('DOMContentLoaded', function() {
-    const botaoAbrirAlerta = document.getElementById('comecar');
+    const botaoAbrirAlerta = document.getElementById('lapide-ft');
     const botaoFecharAlerta = document.getElementById('fechar-modal-home');
     const alertaModal = document.getElementById('alerta-modal');
     const fundoEmbacado = document.getElementById('fundo-embaçado');
