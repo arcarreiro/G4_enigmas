@@ -20,3 +20,13 @@
 }
 
 
+.imgLogo {
+    width: 40%;
+}
+
+@media (max-width: 600px) {
+    .opcoes-home{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
