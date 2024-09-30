@@ -1,179 +1,128 @@
-:root{
-    --cinza-escuro: #1C1C1C;
-    --cinza-ardosia: #2F2F2F;
-    --vermelho-sangue: #B22222;
-    --cinza-metalico: #A9A9A9;
-    --azul-petroleo: #2F4F4F;
-    --roxo-escuro: #4B0082;
-}
+@import url('./cores.css');
 
-html, body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--cinza-ardosia);
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-
-
-.header-sobre{
-    display: flex;
+body{
     background-color: var(--cinza-escuro);
     color: var(--vermelho-sangue);
-    text-align: center;
+
+}
+
+.carousel-container img {
+    max-height: 500px; /* Limita a altura da imagem */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: fit-content;
-    z-index: 1000;
+    border-radius: 5px;
 }
 
-nav{
+#social-media a {
+    transition: transform 0.3s ease;
+}
+
+#social-media a:hover {
+    transform: scale(1.1);
+
+/* Tornar o contêiner do carrossel posicionado relativamente */
+.carousel {
+    position: relative;
+}
+
+/* Ajustar a posição dos botões de controle do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-}
-
-nav ul{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 1rem;
+    z-index: 1;
 }
 
-nav ul li a{
-    color: var(--vermelho-sangue);
-    text-decoration: none;
-    font-size: 20px;
+.carousel-control-prev {
+    left: 10px; /* Ajusta a posição horizontal para a esquerda */
 }
 
-
-
-
-#carouselExampleCaptions{
-    display: flex;
-    color: var(--vermelho-sangue);
-    align-items: center;
-    width: 100%;
+.carousel-control-next {
+    right: 10px; /* Ajusta a posição horizontal para a direita */
 }
 
-
-
-.container-sobre{
-    display: flex;
-    color: var(--cinza-metalico);
-    justify-content:center;
-    align-items: center;
-    padding: 2rem;
-    height: fit-content;
-}
-
-.container-sobre-bloco{
-    display: flex;
-    background-color: var(--cinza-ardosia);
-    color: var(--cinza-metalico);
+/* Ajuste do ícone do controle */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     width: 100%;
     height: 100%;
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
+    background-size: 100%, 100%;
 }
 
-
-.container-sobre img{
-    width: 100%;
-    height: 520px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
-}
-
-#info-article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-#info-article p{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.social-media{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-}
-
-
-
-.footer-sobre{
-    display: flex;
+#article-content{
     background-color: var(--cinza-escuro);
-    color: var(--vermelho-sangue);
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 30px;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-.footer-sobre p{
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+#social-media a {
+    font-size: 40px;
+    color: #B22222;
+}
+
+/* Tornar o contêiner do carrossel posicionado relativamente */
+.carousel {
+    position: relative;
+}
+
+/* Ajustar a posição dos botões de controle do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    margin: 0 auto;
+    justify-content: center;
+    z-index: 1;
 }
 
-
-@media (max-width: 768px){
-
-    header nav ul li a{
-        font-size: 10px;
-    }
-
-    .container-sobre{
-        display: flex;
-        color: var(--cinza-metalico);
-        justify-content:center;
-        align-items: center;
-        padding: 2rem;
-    }
-
-    .container-sobre-bloco{
-        display: flex;
-        flex-direction: column;
-        color: var(--cinza-metalico);
-        justify-content:center;
-        align-items: center;
-        padding: 1rem;
-    }
-    .container-sobre img{
-        width: 100%;
-        height: 380px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10%;
-    }
+.carousel-control-prev {
+    left: 10px; /* Ajusta a posição horizontal para a esquerda */
 }
 
+.carousel-control-next {
+    right: 10px; /* Ajusta a posição horizontal para a direita */
+}
+
+/* Ajuste do ícone do controle */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 100%;
+    height: 100%;
+    background-size: 100%, 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+}
+}
