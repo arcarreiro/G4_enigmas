@@ -1,0 +1,21 @@
+@import 'paginas.css';
+
+
+#escritorio {
+    height: 100%;
+    border-radius: 10px;
+}
+
+#opcoes-home {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: var(--cinza-ardosia);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
