@@ -16,29 +16,33 @@
 <body>
     <header class="header-sobre w-100" id="header">
         <nav class="navbar navbar-expand-lg">
-            <h2>Sobre nós</h2>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#b53030;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                    <img src="../assets/logo.png" class="d-flex "></img>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="background-color:#b53030;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    <main class="container-sobre container d-flex flex-row mt-4">
+    <main class="container-sobre container d-flex flex-row mt-1 p-2">
+        <section class="w-100 d-flex flex-column justify-content-center align-content-center gap-3 p-3">
+            <h1 class="text-center"style="font-size: 28px">Conheça nossa história!</h1>
+            <p class="text-center">Conheça um pouco mais sobre os desenvolvedores do projeto.</p>
+        </section>
         <!-- Seção do Carrossel(slide) -->
-        <section class="carousel-container w-80">
+        <section class="carousel-container w-50 justify-content-center align-content-center">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -47,7 +51,7 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner w-100">
                     <div class="carousel-item active">
                         <img src="../assets/escritorio.jpg" class="d-block w-80 img-fluid" alt="...">
                         <div class="carousel-caption d-md-block">
@@ -110,6 +114,7 @@
                     <li>--- JavaScript --- <i class="fa-brands fa-js"></i>---</li>
                     <li>--- Bootstrap ---<i class="fa-brands fa-bootstrap"></i>---</li>
                     <li>--- FontAwesome ---<i class="fa-brands fa-font-awesome"></i>---</li>
+                    <li>--- AdobeFireFly ---<i class="fa-brands fa-atlassian"></i>---</li>
                 </ul>
             </div>
         </section>
