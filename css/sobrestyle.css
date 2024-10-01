@@ -1,17 +1,16 @@
+/* Estilo geral */
 @import url('./cores.css');
-
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
 
 body {
     background-color: var(--cinza-escuro);
+    font-family: 'Inter';
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     color: var(--vermelho-sangue);
-    width: 100%;
-    font-size: 18px;
+    font-weight: bold;
+    overflow-y: scroll;
 }
 
 main {
@@ -21,25 +20,124 @@ main {
     justify-content: center;
 }
 
-#header {
+footer {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--cinza-ardosia);
-    color: var(--vermelho-sangue);
     padding: 10px 20px;
-    font-size: 32px;
 }
 
+/* Estilizando a logo e o menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Alinhando a logo à esquerda e os links à direita */
 .navbar-brand {
-    font-size: 1.5rem;
+    flex: 1; /* Permite que a logo ocupe o espaço necessário */
 }
 
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Coloca os links à direita */
+    gap: 20px; /* Espaçamento entre os links */
+    list-style: none; /* Remove o estilo de lista padrão */
+}
+
+/* Estilizando a logo */
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+/* Estilos para os links de navegação */
 .navbar-nav .nav-link {
     color: var(--vermelho-sangue);
+    font-size: 28px;
     text-decoration: none;
 }
 
 .navbar-nav .nav-link:active {
     color: white;
     -webkit-text-stroke: 3px var(--vermelho-sangue);
+}
+
+/* Responsividade do header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 24px;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+}
+
+
+.container-imagem {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#cabecalho {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: var(--cinza-ardosia);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+
+.menu-superior {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    margin-right: 1rem;
+    color: var(--vermelho-sangue);
+    font-size: x-large;
 }
 
 .carousel-container {
@@ -180,40 +278,4 @@ footer {
 
 .carousel {
     position: relative;
-}
-
-@media (max-width: 768px) {
-    #header {
-        font-size: 32px;
-    }
-
-    #social-media a {
-        font-size: 24px;
-    }
-
-    .carousel-container,
-    #article-content {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel-container {
-        width: 100%;
-    }
-
-    #article-content {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar-nav .nav-link {
-        font-size: 32px;
-    }
 }

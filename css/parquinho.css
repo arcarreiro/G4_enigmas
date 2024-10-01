@@ -1,11 +1,11 @@
 @import 'paginas.css';
 
-#escritorio {
+#parquinho {
     height: 100%;
     border-radius: 10px;
 }
 
-#opcoes-home {
+#opcoes-parquinho {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -18,12 +18,31 @@
     border-top-left-radius: 10px;
 }
 
+#fechar-modal-home{
+    border-radius: 50%;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+#alerta-modal p {
+    padding: 1rem;
+    background-color: #f1e5cb;
+    width: 95%;
+    margin: 1rem 0;
+    color: black;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    align-self: center;
+}
+
 .imgLogo {
     width: 40%;
 }
 
 @media (max-width: 600px) {
-    .opcoes-home{
+    .opcoes-parquinho{
         display: flex;
         flex-wrap: wrap;
     }

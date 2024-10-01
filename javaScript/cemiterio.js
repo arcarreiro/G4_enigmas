@@ -57,7 +57,7 @@ function adicionarEventos() {
             <button id="b-lapide">Verificar Lápide</button>`;
 
             document.getElementById('b-lapide').addEventListener('click', function () {
-                fundoTela.src = '../assets/lapide.webp';
+                fundoTela.src = '../assets/lapide.jpg';
                 document.getElementById('opcoes-home').innerHTML = `<button id="lapide-v">Voltar para entrada</button>`;
                 fecharAlerta();
                 document.getElementById('lapide-v').addEventListener('click', function () {
@@ -88,7 +88,8 @@ function adicionarEventos() {
             </p>
             <button id="seguir-M">Prosseguir</button>`;
             document.getElementById('seguir-M').addEventListener('click', function () {
-                fundoTela.src = '../assets/mansao.png';
+                fundoTela.src = '../assets/final2.jpg';
+                fecharAlerta();
             });
         });
     };

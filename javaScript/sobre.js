@@ -2,33 +2,33 @@ document.addEventListener('DOMContentLoaded', function () {
     const artigos = [
         {
             nome: "Arthur Carreiro",
-            descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
+            descricao: "Estudante de programação com formação em Engenharia, apaixonado por jogos e pelo universo do terror. Atualmente, atua como tradutor especializado em jogos, unindo sua paixão por histórias envolventes e tecnologia.",
             github: '<a href="https://github.com/arcarreiro" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
             linkedin: '<a href="https://www.linkedin.com/in/arthurcarreiro/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
         },
         {
             nome: "Eber Cintra",
             descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-            github: '<a href="https://github.com/ebercintra" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
-            linkedin: '<a href="https://www.linkedin.com/in/ebercintra/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
+            github: '<a href="https://github.com/cintra444" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
+            linkedin: '<a href="https://www.linkedin.com/in/eber-cintra-261630246/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
         },
         {
             nome: "Gabriel Bardasson",
-            descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
+            descricao: "Apaixonado por tecnologia. Atuei como analista na automação de postos de gasolina por um ano e meio. Formado em técnico em automação, atualmente curso engenharia de software, buscando sempre crescer e inovar na área",
             github: '<a href="https://github.com/gabrielbardasson" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
-            linkedin: '<a href="https://www.linkedin.com/in/gabrielbardasson/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
+            linkedin: '<a href="https://www.linkedin.com/in/gabriel-bardasson-49858b204/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
         },
         {
             nome: "Gustavo Fernandes",
             descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-            github: '<a href="https://github.com/gustavofernandes" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
-            linkedin: '<a href="https://www.linkedin.com/in/gustavofernandes/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
+            github: '<a href="https://github.com/gustavofernandes0403" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
+            linkedin: '<a href="https://www.linkedin.com/in/gustavo-fernandes77/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
         },
         {
             nome: "Julio Braz",
-            descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-            github: '<a href="https://github.com/juliobraz" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
-            linkedin: '<a href="https://www.linkedin.com/in/juliobraz/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
+            descricao: "Sou graduado em engenharia da computação e atuo na área de infraestrutura. Atualmente sou residente do programa TIC/Software do Serratec.",
+            github: '<a href="https://github.com/JulioBraz7" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
+            linkedin: '<a href="https://www.linkedin.com/in/julio-cesar-bento-braz-138b261aa/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
         }
     ];
 
