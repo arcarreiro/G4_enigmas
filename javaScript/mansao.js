@@ -52,7 +52,7 @@ function adicionarNovosBotoes() {
     botao1.addEventListener('click', () => {
         //indexando texto modal
         trocarImgERmvBotoes('../assets/mansaomesa.png',
-            'Ao subir as escadas, você se depara com um cômodo devastado pelo tempo. As paredes estão cobertas de rachaduras, e o teto parece prestes a desmoronar. O ar é denso e cheira a mofo, mas em meio a esse cenário de decadência, algo se destaca. Um livro, velho e empoeirado, está aberto sobre a mesa, como se tivesse sido manuseado recentemente. Estranhamente, a página em que ele está aberto está rasgada, faltando justo a parte mais crucial. Coincidência? Dificilmente. <br><br> Ao investigar o livro com mais atenção, as peças do quebra-cabeça começam a se encaixar. Corunas não é apenas uma cidade pacata; seus moradores veneram uma entidade antiga e maléfica. Os desaparecidos, na verdade, são sacrifícios realizados em nome dessa entidade sombria, entregues em rituais macabros. <br><br> Você descobre que existe uma maneira de impedir o ritual, de cortar o poder dessa entidade e salvar futuras vítimas. No entanto, outra escolha se apresenta. Confrontar os próprios moradores, aqueles que seguem cegamente essa prática, pode ser o único caminho para acabar de vez com essa seita. <br><br> Agora, resta a decisão: tentar interromper o ritual em segredo ou encarar os moradores de Corunas e pôr um fim à devoção ao mal.');
+            'Ao subir as escadas, você se depara com um cômodo devastado pelo tempo. As paredes estão cobertas de rachaduras, e o teto parece prestes a desmoronar. O ar é denso e cheira a mofo, mas em meio a esse cenário de decadência, algo se destaca. Um livro, velho e empoeirado, está aberto sobre a mesa, como se tivesse sido manuseado recentemente. Estranhamente, a página em que ele está aberto está rasgada, faltando justo a parte mais crucial. Coincidência? Dificilmente. <br><br> Ao investigar o livro com mais atenção, as peças do quebra-cabeça começam a se encaixar. Corunas não é apenas uma cidade pacata; seus moradores veneram uma entidade antiga e maléfica. Os desaparecidos, na verdade, são sacrifícios realizados em nome dessa entidade sombria, entregues em rituais macabros. <br><br> Você descobre que existe uma maneira de impedir o ritual, de cortar o poder dessa entidade e salvar futuras vítimas. No entanto, outra escolha se apresenta. Confrontar os próprios moradores, aqueles que seguem cegamente essa prática, pode ser o único caminho para acabar de vez com essa seita. <br><br> Agora, resta a decisão: tentar interromper o ritual em segredo ou encarar os moradores de Corunas e pôr um fim à devoção ao mal.', adicionarMaisBotoes);
         //alert('Subir escadas');
     });
 
@@ -62,8 +62,8 @@ function adicionarNovosBotoes() {
     botao2.addEventListener('click', () => {
         //indexando texto modal
         trocarImgERmvBotoes('../assets/mansaoporao.png',
-            '<strong>Explorar o Porão</strong><br><br><br>O cheiro de cera queimada e umidade preenche o ar enquanto você desce os últimos degraus para o porão. A luz fraca das velas tremula, criando sombras distorcidas nas paredes de pedra irregular. No centro, uma mesa circular de pedra está cercada por fileiras de velas, todas acesas, como se estivessem esperando o início de algo terrível. Símbolos gravados na pedra chamam sua atenção, mas o que realmente faz seu estômago revirar é o livro aberto, suas páginas manchadas de sangue seco. <br><br> Você se aproxima com cautela, evitando as poças de cera que pingam do teto. Suas mãos tocam a superfície áspera da mesa, onde objetos de culto repousam, mas é uma frase, rabiscada apressadamente em uma das paredes, que faz seu coração disparar: O ritual se completa no cemitério. <br><br>Uma sensação de urgência toma conta de você. Está claro que algo está prestes a acontecer, e o cemitério parece ser o próximo passo inevitável.');
-               // alert('Entrar no Porão');
+            '<strong>Explorar o Porão</strong><br><br><br>O cheiro de cera queimada e umidade preenche o ar enquanto você desce os últimos degraus para o porão. A luz fraca das velas tremula, criando sombras distorcidas nas paredes de pedra irregular. No centro, uma mesa circular de pedra está cercada por fileiras de velas, todas acesas, como se estivessem esperando o início de algo terrível. Símbolos gravados na pedra chamam sua atenção, mas o que realmente faz seu estômago revirar é o livro aberto, suas páginas manchadas de sangue seco. <br><br> Você se aproxima com cautela, evitando as poças de cera que pingam do teto. Suas mãos tocam a superfície áspera da mesa, onde objetos de culto repousam, mas é uma frase, rabiscada apressadamente em uma das paredes, que faz seu coração disparar: O ritual se completa no cemitério. <br><br>Uma sensação de urgência toma conta de você. Está claro que algo está prestes a acontecer, e o cemitério parece ser o próximo passo inevitável.', adicionarMaisBotoesPorao);
+        // alert('Entrar no Porão');
     });
 
     //adicionar os  botoes
@@ -73,7 +73,7 @@ function adicionarNovosBotoes() {
 
 
 //funcao quando sobe as escadas
-function trocarImgERmvBotoes(novaImagem ,novoTextoModal) {
+function trocarImgERmvBotoes(novaImagem, novoTextoModal, funcao) {
     // Trocar a imagem de fundo
     fundoTela.src = novaImagem;
 
@@ -82,7 +82,7 @@ function trocarImgERmvBotoes(novaImagem ,novoTextoModal) {
     rodape.innerHTML = ''; // Limpa todos os botões
 
     // Adicionar dois novos botões
-    adicionarMaisBotoes();
+    funcao();
 
     // Atualizar o texto do modal
     const modalTexto = document.getElementById('modal-texto');
@@ -115,7 +115,7 @@ function adicionarMaisBotoes() {
 
 function adicionarMaisBotoesPorao() {
     const rodape = document.getElementById('opcoes-mansao');
-    
+
     // Cria botão encontrar itens
     const botao5 = document.createElement('button');
     botao5.innerHTML = 'Encontrar Itens';
@@ -129,7 +129,7 @@ function adicionarMaisBotoesPorao() {
     botao6.addEventListener('click', () => {
         alert('Voltar para Casa Abandonada');
     });
-    
+
     // Cria botão voltar ao cemiterio
     const botao7 = document.createElement('button');
     botao7.innerHTML = 'Voltar ao Cemiterio';
@@ -142,7 +142,7 @@ function adicionarMaisBotoesPorao() {
     rodape.appendChild(botao7);
 };
 //funcao quando entra no porao
-function trocarImgERmvBotoesPorao(novaImagem ,novoTextoModal)  {
+function trocarImgERmvBotoesPorao(novaImagem, novoTextoModal) {
     // Trocar a imagem de fundo
     fundoTela.src = novaImagem;
 
