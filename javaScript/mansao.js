@@ -73,7 +73,7 @@ if (botaoSubirEscadas) {
         mostrarAlerta();
         document.getElementById('conteudo-modal').innerHTML = `
         A subir as escadas.....
-        <p>    
+        <p>
         Ao subir as escadas, você se depara com um cômodo devastado pelo tempo. As paredes estão cobertas de rachaduras, e o teto parece prestes a desmoronar. 
         O ar é denso e cheira a mofo, mas em meio a esse cenário de decadência, algo se destaca. Um livro, velho e empoeirado, está aberto sobre a mesa, como 
         se tivesse sido manuseado recentemente. Estranhamente, a página em que ele está aberto está rasgada, faltando justo a parte mais crucial. Coincidência? 
