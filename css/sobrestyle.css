@@ -1,19 +1,16 @@
 @import url('./cores.css');
 
-html, body {
+body {
     height: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     margin: 0;
-}
-
-body {
     background-color: var(--cinza-escuro);
     color: var(--vermelho-sangue);
-    width: 100%;
     font-size: 18px;
 }
+
 
 main {
     flex: 1;

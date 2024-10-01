@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             nome: "Julio Braz",
-            descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
-            github: '<a href="https://github.com/juliobraz" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
-            linkedin: '<a href="https://www.linkedin.com/in/juliobraz/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
+            descricao: "Sou graduado em engenharia da computação e atuo na área de infraestrutura. Atualmente sou residente do programa TIC/Software do Serratec.",
+            github: '<a href="https://github.com/JulioBraz7" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
+            linkedin: '<a href="https://www.linkedin.com/in/julio-cesar-bento-braz-138b261aa/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
         }
     ];
 
