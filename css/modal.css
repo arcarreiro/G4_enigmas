@@ -41,8 +41,10 @@
 #alerta-modal h2 {
     margin: 0 0.5rem;
     font-family: Inter;
-    font-size:xx-large;
-}
+    sobre/contato/cemiterio/bardasson
+    font-size: 1.5rem;
+    font-weight: bold;
+
 
 #alerta-modal p {
     padding: 1rem;
@@ -67,7 +69,7 @@
     font-size: large;
 }
 
-#fechar-modal-home {
+#fechar-modal-home{
     border-radius: 50%;
     padding: 0;
     width: 2rem;

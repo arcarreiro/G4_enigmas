@@ -59,3 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Opcional: fechar o modal ao clicar fora da janela
     fundoEmbacado.addEventListener('click', fecharAlerta);
 });
+
+document.getElementById("toggle-button").addEventListener("click", function() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+});
