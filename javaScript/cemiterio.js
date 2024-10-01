@@ -108,10 +108,10 @@ function adicionarEventos() {
         <button id="mansao">Ir para a mansão</button>`;
 
         document.getElementById('parque').addEventListener('click', () => {
-            window.location.href = '../pages/parquinho.html';
+            window.location.href = '../pages/Parquinho.html';
         });
         document.getElementById('mansao').addEventListener('click', () => {
-            window.location.href = '../pages/mansao.html';
+            window.location.href = '../pages/Mansao.html';
         });
     });
 }
