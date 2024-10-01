@@ -83,7 +83,7 @@ function adicionarEventos() {
             fecharAlerta();
             document.getElementById('opcoes-home').innerHTML = `<button id="b-final">Encerrar</button>`;
             document.getElementById('b-final').addEventListener('click', () => {
-                    const PATHOME = './index.html';
+                    const PATHOME = '../index.html';
                     mostrarAlerta();
                     document.getElementById('conteudo-modal').innerHTML = `<p>
                     <strong>Morte inevitável...</strong><br><br>
@@ -108,10 +108,10 @@ function adicionarEventos() {
         <button id="mansao">Ir para a mansão</button>`;
 
         document.getElementById('parque').addEventListener('click', () => {
-            window.location.href = '../pages/Parquinho.html';
+            window.location.href = '../pages/parquinho.html';
         });
         document.getElementById('mansao').addEventListener('click', () => {
-            window.location.href = '../pages/Mansao.html';
+            window.location.href = '../pages/mansao.html';
         });
     });
 }
