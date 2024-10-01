@@ -14,7 +14,7 @@ document.getElementById('bt-submit').addEventListener('click', function (event) 
             body: new URLSearchParams({
                 "apikey": "33CC23DFF35280119899F39FF364A233D4648E7C55C52C45C5ED8A9604354EC98BB5009419AE4E1B17EECA6447969BD9", // Substitua com sua chave de API ElasticEmail
                 "subject": `${nome}, obrigado por entrar em contato!`,
-                "from": "gabriel123.bardasson@gmail.com",
+                "from": email,
                 "to": email,
                 "bodyHtml": `Nome: ${nome} <br> Email: ${email} <br> Mensagem: ${mensagem}`,
                 "isTransactional": false
