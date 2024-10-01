@@ -106,7 +106,7 @@ function adicionarEventos() {
         </p>
         <button id="parque" style= "margin: 1rem auto">Ir para o parquinho</button>
         <button id="mansao">Ir para a mansão</button>`;
-
+        fecharAlerta();
         document.getElementById('parque').addEventListener('click', () => {
             window.location.href = '../pages/parquinho.html';
         });
