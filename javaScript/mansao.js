@@ -77,7 +77,7 @@ botaoComecar.addEventListener('click', () => {
             mostrarAlerta();
             document.getElementById('conteudo-modal').innerHTML = `
             <p>
-            A subir as escadas...
+            A subir as escadas...<br>
             Ao subir as escadas, você se depara com um cômodo devastado pelo tempo. As paredes estão cobertas de rachaduras, e o teto parece prestes a desmoronar. O ar é denso e cheira a mofo, mas em meio a esse cenário de decadência, algo se destaca. Um livro, velho e empoeirado, está aberto sobre a mesa, como se tivesse sido manuseado recentemente. Estranhamente, a página em que ele está aberto está rasgada, faltando justo a parte mais crucial. Coincidência? Dificilmente. <br>
             Ao investigar o livro com mais atenção, as peças do quebra-cabeça começam a se encaixar. Corunas não é apenas uma cidade pacata; seus moradores veneram uma entidade antiga e maléfica. Os desaparecidos, na verdade, são sacrifícios realizados em nome dessa entidade sombria, entregues em rituais macabros.<br>
             Você descobre que existe uma maneira de impedir o ritual, de cortar o poder dessa entidade e salvar futuras vítimas. No entanto, outra escolha se apresenta. Confrontar os próprios moradores, aqueles que seguem cegamente essa prática, pode ser o único caminho para acabar de vez com essa seita.
