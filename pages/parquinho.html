@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parquinho abandonado</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cemiterio.css">
+    <title>Parquinho Abandonado</title>
 </head>
 
 <body>
-    
-    
+    <!-- modal -->
+    <div id="fundo-embaçado"></div>
+    <div id="alerta-modal">
+        <div class="header-modal">
+            <h2>A cidade de Corunas</h2>
+            <button id="fechar-modal-home" aria-label="Close">x</button>
+        </div>
+        <div class="conteudo-modal">
+            <p>
+                <strong>Relatório do Caso - Parquinho Abandonado</strong><br><br>
+                Detetive,<br><br>
+                O balanço está em movimento e o vento não está forte o suficiente para isso. Alguém com certeza saiu
+                correndo daqui antes que você chegasse. O assento ainda está quente e... O que é isso embaixo do
+                balanço? Parece uma página rasgada de um livro...<br><br>
+                É incrível como o escorregador fica bem-posicionado. Oposto a isso, é de arrepiar os ossos o silêncio e
+                a escuridão que acompanham o sono desta cidade, não parece natural. Os únicos barulhos que você ouve são
+                dos animais da noite. Mas, ao longe, dois pontos luminosos chamam a sua atenção: um você sabe que fica
+                na direção do cemitério e o outro parece vir de uma casa às margens da cidade...<br>
+            </p>
+            <button id="seguir-aventura">Ir para Corunas</button>
+        </div>
+    </div>
+    <!-- /modal -->
+
+    <section class="container-geral">
+        <header>
+            <div id="cabecalho">
+                <img src="../assets/logo.png" alt="">
+                <ul class="menu-superior">
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+        </header>
+        <main class="container-imagem">
+            <img id="escritorio" src="../assets/parquinho.jpg"
+                alt="Imagem de um decadente parquinho abandonado, seus brinquedos decadentes e um balanço que não para de balançar">
+        </main>
+        <footer>
+            <div id="opcoes-home">
+                <button id="balanço">Clique aqui para investigar o balanço</button>
+                <button id="escorregador">explorar escorregador</button>
+                <button id="voltar-p-p">deseja voltar</button>
+            </div>
+        </footer>
+    </section>
+
+    <script src="../javaScript/cemiterio.js" defer></script>
 </body>
+
 </html>
