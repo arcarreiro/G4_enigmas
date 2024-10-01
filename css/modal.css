@@ -41,6 +41,8 @@
 #alerta-modal h2 {
     margin: 0 0.5rem;
     font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #alerta-modal p {

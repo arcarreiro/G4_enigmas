@@ -2,9 +2,6 @@ let imagemFixa = '../assets/cemiterio.jpg';
 const pathLapide = '../assets/cemiterio-lapide.jpg';
 const pathMausoleu = '../assets/cemiterio-mausoleu.jpg';
 let fundoTela = document.getElementById('lapide-ft');
-const botaoLapide = document.getElementById('lapide');
-const botaoMausoleu = document.getElementById('mausoleu');
-const botaoCaminhos = document.getElementById('caminhos');
 
 // Funções para o modal (movidas para o escopo global)
 const botaoFecharAlerta = document.getElementById('fechar-modal-home');
@@ -13,6 +10,9 @@ const fundoEmbacado = document.getElementById('fundo-embaçado');
 
 // Função para adicionar eventos de mouse e clique
 function adicionarEventos() {
+    const botaoLapide = document.getElementById('lapide');
+    const botaoMausoleu = document.getElementById('mausoleu');
+    const botaoCaminhos = document.getElementById('caminhos');
 
     function mostrarAlerta() {
         alertaModal.style.display = 'block';
@@ -42,7 +42,7 @@ function adicionarEventos() {
             fundoTela.src = imagemFixa;
         });
 
-        botaoLapide.addEventListener('click', function() {
+        botaoLapide.addEventListener('click', function () {
             mostrarAlerta();
             document.getElementById('conteudo-modal').innerHTML = `<p>
                 <strong>Caminhando para a lápide...</strong><br><br>
@@ -65,8 +65,8 @@ function adicionarEventos() {
                     document.getElementById('opcoes-home').innerHTML = `
                         <button id="lapide">Investigar a Lápide</button>
                         <button id="mausoleu">Explorar o Mausoléu</button>
-                        <button id="voltar-p-c">Deseja voltar</button>`;
-                    adicionarEventos(); // Reaplicar eventos
+                        <button id="caminhos">Escolher caminhos</button>`;
+                    adicionarEventos(); // Garantir que todos os eventos sejam reanexados, incluindo "Escolher caminhos"
                 });
             });
         });
@@ -93,30 +93,27 @@ function adicionarEventos() {
         });
     };
 
-
-    botaoCaminhos.addEventListener('click', function () {
-        mostrarAlerta();
-        document.getElementById('conteudo-modal').innerHTML =`
-        <p>
-        <strong>Escolha sua Rota...</strong><br><br>
-        Você está no cemitério antigo de Corunas. Existe um caminho para a parquinho e outro para a mansao abandonada. Qual você escolhe?
-        </p>
-        <button id="parque">Ir para o parquinho</button>
-        <button id="mansao">Ir para a mansao</button>`;
-        document.getElementById('parque').addEventListener('click', function () {
-            window.location.href = '../pages/parquinho.html';
+    if (botaoCaminhos) {
+        botaoCaminhos.addEventListener('click', function () {
+            mostrarAlerta();
+            document.getElementById('conteudo-modal').innerHTML = `
+            <p>
+            <strong>Escolha sua Rota...</strong><br><br>
+            Você está no cemitério antigo de Corunas. Existe um caminho para a parquinho e outro para a mansao abandonada. Qual você escolhe?
+            </p>
+            <button id="parque">Ir para o parquinho</button>
+            <button id="mansao">Ir para a mansao</button>`;
+            document.getElementById('parque').addEventListener('click', function () {
+                window.location.href = '../pages/parquinho.html';
+            });
+            document.getElementById('mansao').addEventListener('click', function () {
+                window.location.href = '../pages/mansao.html';
+            });
         });
-        document.getElementById('mansao').addEventListener('click', function () {
-            window.location.href = '../pages/mansao.html';
-        });
-    });
-
+    }
 };
 
-
-
-
-// Chama a função para adicionar os eventos iniciais
+// Adicionar eventos
 adicionarEventos();
 
 // Redimensionamento do header e footer
