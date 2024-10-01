@@ -38,6 +38,10 @@
     height: 2rem;
 }
 
+.imgLogo {
+    width: 40%;
+}
+
 @media (max-width: 600px) {
     .opcoes-home{
         display: flex;
