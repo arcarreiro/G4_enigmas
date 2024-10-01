@@ -21,12 +21,12 @@ Suas decisões ao longo da história afetam o desfecho da investigação. Utiliz
 - **API**: Sistema de envio de emails na página de contato.
 
 ## 🖥️ Desenvolvedores
-- **[Arthur Carreiro](https://github.com/arcarreiro)
-- **[Eber Cintra](https://github.com/cintra444)
-- **[Gabriel Bardasson](https://github.com/gabrielbardasson)
-- **[Gustavo Fernandes](https://github.com/gustavofernandes0403)
-- **[Julio Braz](https://github.com/JulioBraz7)
-- 
+- [Arthur Carreiro](https://github.com/arcarreiro)
+- [Eber Cintra](https://github.com/cintra444)
+- [Gabriel Bardasson](https://github.com/gabrielbardasson)
+- [Gustavo Fernandes](https://github.com/gustavofernandes0403)
+- [Julio Braz](https://github.com/JulioBraz7)
+  
 ## 📁 Estrutura do Projeto
 
 ```bash
