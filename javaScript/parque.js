@@ -1,9 +1,9 @@
 let botaoBalanco = document.getElementById('balanco');
 let botaoEscorregador = document.getElementById('escorregador');
 let botaoCemiterio = document.getElementById('ir-cemiterio');
-let imagemFixa = '../assets/parquinho.jpg';
-let imagemBalanco = '../assets/parquinho-balanco.jpg';
-let imagemEscorregador = '../assets/parquinho-escoregador.jpg';
+let imagemFixa = '../assets/parquinho.webp';
+let imagemBalanco = '../assets/parquinho-balanco.webp';
+let imagemEscorregador = '../assets/parquinho-escoregador.webp';
 let fundoTela = document.getElementById('parquinho');
 
 

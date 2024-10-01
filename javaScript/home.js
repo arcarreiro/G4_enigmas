@@ -1,6 +1,6 @@
 let button = document.getElementById('comecar');
-let imagemFixa = './assets/escritorio.jpg';
-let imagemTransitoria = './assets/escritorio2.jpg';
+let imagemFixa = './assets/escritorio.webp';
+let imagemTransitoria = './assets/escritorio2.webp';
 let fundoTela = document.getElementById('escritorio');
 
 // highlight do arquivo

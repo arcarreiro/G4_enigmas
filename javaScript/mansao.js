@@ -1,6 +1,6 @@
 let botaoComecar = document.getElementById('comecar');
-let imagemFixa = '../assets/mansao.png';
-let imagemTransitoria = '../assets/mansao2.png';
+let imagemFixa = '../assets/mansao.webp';
+let imagemTransitoria = '../assets/mansao2.webp';
 let fundoTela = document.getElementById('mansao');
 let quadroBotoes = document.getElementById('opcoes-home');
 
@@ -51,7 +51,7 @@ if (fundoEmbacado) {
 
 botaoComecar.addEventListener('click', () => {
     //trocar a imagem
-    fundoTela.src = '../assets/mansaoescadas.png'
+    fundoTela.src = '../assets/mansaoescadas.webp'
     //adicionar botões
     quadroBotoes.innerHTML = `
     <button id="subirEscadas">Subir as escadas</button>
@@ -62,15 +62,15 @@ botaoComecar.addEventListener('click', () => {
     if (botaoSubirEscadas) {
 
         botaoSubirEscadas.addEventListener('mouseover', () => {
-            fundoTela.src = '../assets/mansaoescadas-escada.png';
+            fundoTela.src = '../assets/mansaoescadas-escada.webp';
         });
         botaoSubirEscadas.addEventListener('mouseout', () => {
-            fundoTela.src = '../assets/mansaoescadas.png';
+            fundoTela.src = '../assets/mansaoescadas.webp';
         });
     }
 
     botaoSubirEscadas.addEventListener('click', function () {
-        fundoTela.src = "../assets/mansaomesa.png"
+        fundoTela.src = "../assets/mansaomesa.webp"
         quadroBotoes.innerHTML = ` <button id="investigar-comodo">Investigar o cômodo</button>`
 
         document.getElementById('investigar-comodo').addEventListener('click', () => {
@@ -86,7 +86,7 @@ botaoComecar.addEventListener('click', () => {
             <button id='impedir-ritual'>Impedir o ritual</button>`;
 
             document.getElementById('confrontar-moradores').addEventListener('click', () => {
-                fundoTela.src = '../assets/final2.jpg';
+                fundoTela.src = '../assets/final2.webp';
                 document.getElementById('conteudo-modal').innerHTML = `<p>Você decide que não pode mais ficar às sombras. Ao sair do prédio em ruínas, seu olhar encontra o dos moradores, que agora se reúnem na praça principal. Seus olhares frios e vazios denunciam que algo terrível está para acontecer. Determinado, você caminha em direção à multidão. Cada passo é pesado, e o silêncio da cidade só aumenta a sensação de perigo iminente. 
 
 Ao chegar perto, você levanta a voz, revelando o que descobriu sobre o culto e os sacrifícios. As palavras ecoam pela praça, mas os rostos ao seu redor permanecem impassíveis. Então, alguém se move. Um dos líderes, com um sorriso perturbador, ergue a mão. Você percebe tarde demais a mudança de clima. O grupo se fecha ao seu redor, e os sussurros começam a soar como uma canção macabra. 
@@ -102,7 +102,7 @@ Antes que possa reagir, algo atinge a parte de trás da sua cabeça. Sua visão 
 
             document.getElementById('impedir-ritual').addEventListener('click', () => {
                 fecharAlerta();
-                fundoTela.src = '../assets/final1.jpg';
+                fundoTela.src = '../assets/final1.webp';
                 quadroBotoes.innerHTML = `<button id="final1">Encerrar</button>`;
                 document.getElementById('final1').addEventListener('click', () => {
                     mostrarAlerta();
@@ -120,10 +120,10 @@ Antes que possa reagir, algo atinge a parte de trás da sua cabeça. Sua visão 
     if (botaoDescerPorao) {
 
         botaoDescerPorao.addEventListener('mouseover', () => {
-            fundoTela.src = '../assets/mansaoescadas-porao.png';
+            fundoTela.src = '../assets/mansaoescadas-porao.webp';
         });
         botaoDescerPorao.addEventListener('mouseout', () => {
-            fundoTela.src = '../assets/mansaoescadas.png';
+            fundoTela.src = '../assets/mansaoescadas.webp';
         });
     }
 
@@ -134,14 +134,14 @@ Antes que possa reagir, algo atinge a parte de trás da sua cabeça. Sua visão 
 Você se aproxima com cautela, evitando as poças de cera que pingam do teto. Suas mãos tocam a superfície áspera da mesa, onde objetos de culto repousam, mas é uma frase, rabiscada apressadamente em uma das paredes, que faz seu coração disparar: "O ritual se completa no cemitério."<br> 
 
 Uma sensação de urgência toma conta de você. Está claro que algo está prestes a acontecer, e o cemitério parece ser o próximo passo inevitável.</p> `
-        fundoTela.src = '../assets/mansaoporao.png';
+        fundoTela.src = '../assets/mansaoporao.webp';
         quadroBotoes.innerHTML = `
             <button id="fugir">Abandonar a investigação</button>
             <button id="lutar">Tentar impedir o ritual no cemitério</button>`
 
         document.getElementById('fugir').addEventListener('click', () => {
             fecharAlerta();
-            fundoTela.src = "../assets/final3.jpg";
+            fundoTela.src = "../assets/final3.webp";
             quadroBotoes.innerHTML = `<button id='final3'>Encerrar</button>`;
             document.getElementById('final3').addEventListener('click', () => {
                 mostrarAlerta();
@@ -156,7 +156,7 @@ Uma sensação de urgência toma conta de você. Está claro que algo está pres
                 document.getElementById('conteudo-modal').innerHTML = `<p>Você decide que não pode mais ficar às sombras. Ao sair do prédio em ruínas, seu olhar encontra o dos moradores, que agora se reúnem na praça principal. Seus olhares frios e vazios denunciam que algo terrível está para acontecer. Determinado, você caminha em direção à multidão. Cada passo é pesado, e o silêncio da cidade só aumenta a sensação de perigo iminente.
                 Ao chegar perto, você levanta a voz, revelando o que descobriu sobre o culto e os sacrifícios. As palavras ecoam pela praça, mas os rostos ao seu redor permanecem impassíveis. Então, alguém se move. Um dos líderes, com um sorriso perturbador, ergue a mão. Você percebe tarde demais a mudança de clima. O grupo se fecha ao seu redor, e os sussurros começam a soar como uma canção macabra.
                 Antes que possa reagir, algo atinge a parte de trás da sua cabeça. Sua visão fica turva, o chão parece desmoronar sob seus pés, e a última coisa que vê são os rostos impenetráveis dos moradores, seus sorrisos pálidos se aproximando enquanto a escuridão toma conta. </p>`;
-                fundoTela.src = '../assets/final2.jpg';
+                fundoTela.src = '../assets/final2.webp';
                 quadroBotoes.innerHTML = `<button id='final2'>Encerrar</button>`;
                 document.getElementById('final2').addEventListener('click', () => {
                     mostrarAlerta();

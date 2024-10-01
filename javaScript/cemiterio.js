@@ -1,6 +1,6 @@
-let imagemFixa = '../assets/cemiterio.jpg';
-const pathLapide = '../assets/cemiterio-lapide.jpg';
-const pathMausoleu = '../assets/cemiterio-mausoleu.jpg';
+let imagemFixa = '../assets/cemiterio.webp';
+const pathLapide = '../assets/cemiterio-lapide.webp';
+const pathMausoleu = '../assets/cemiterio-mausoleu.webp';
 let fundoTela = document.getElementById('lapide-ft');
 
 // Funções para o modal (escopo global)
@@ -49,7 +49,7 @@ function adicionarEventos() {
         <button id="b-lapide">Verificar Lápide</button>`;
 
         document.getElementById('b-lapide').addEventListener('click', () => {
-            fundoTela.src = '../assets/lapide.jpg';
+            fundoTela.src = '../assets/lapide.webp';
             document.getElementById('opcoes-home').innerHTML = `<button id="lapide-v">Voltar para entrada</button>`;
             fecharAlerta();
             document.getElementById('lapide-v').addEventListener('click', () => {
@@ -79,7 +79,7 @@ function adicionarEventos() {
         <button id="seguir-M">Prosseguir</button>`;
 
         document.getElementById('seguir-M').addEventListener('click', () => {
-            fundoTela.src = '../assets/final2.jpg';
+            fundoTela.src = '../assets/final2.webp';
             fecharAlerta();
             document.getElementById('opcoes-home').innerHTML = `<button id="b-final">Encerrar</button>`;
             document.getElementById('b-final').addEventListener('click', () => {

@@ -3,10 +3,10 @@ let buttonFonte = document.getElementById('fonte');
 let buttonBanco = document.getElementById('banco');
 let buttonSair = document.getElementById('sair');
 
-let imagemTransitoriaArvores = '../assets/praca-arvores.png';
-let imagemTransitoriaFonte = '../assets/praca-fonte.png';
-let imagemTransitoriaBanco = '../assets/praca-banco.png';
-let imagemFixa = '../assets/praca.png';
+let imagemTransitoriaArvores = '../assets/praca-arvores.webp';
+let imagemTransitoriaFonte = '../assets/praca-fonte.webp';
+let imagemTransitoriaBanco = '../assets/praca-banco.webp';
+let imagemFixa = '../assets/praca.webp';
 
 let fundoTela = document.getElementById('praca');
 
@@ -122,7 +122,7 @@ buttonFonte.addEventListener('click', () => {
     texto.innerHTML = `<p>A fonte, com sua água turva e musgo cobrindo partes das bordas, guarda mais do que aparenta. Ao se aproximar, você percebe algo gravado na pedra desgastada, quase escondido pelo tempo e pelo descuido. As palavras, difíceis de ler, parecem antigas e carregam um significado que você ainda não consegue compreender. A água escorre lentamente sobre a superfície, tornando a leitura ainda mais desafiadora. Você limpa parte da pedra e, aos poucos, as letras borradas começam a surgir, mas a mensagem ainda é fragmentada, uma mistura de símbolos e palavras enigmáticas.<br><br> Algo está escrito aqui... mas o que?</p>
     <button id='placa-fonte'>Tentar decifrar</button>`;
     document.getElementById('placa-fonte').addEventListener('click', () => {
-        fundoTela.src = '../assets/praca.fonte-escrita.jpg';
+        fundoTela.src = '../assets/praca.fonte-escrita.webp';
         document.getElementById('opcoes-praca').innerHTML = `<button id="placa">Investigar</button>`;
         fecharAlerta();
         document.getElementById('placa').addEventListener('click', () => {
