@@ -23,7 +23,7 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     z-index: 1000;
-    width: 35rem;
+    width: 70%;
 }
 
 .conteudo-modal {
@@ -41,9 +41,10 @@
 #alerta-modal h2 {
     margin: 0 0.5rem;
     font-family: Inter;
+    sobre/contato/cemiterio/bardasson
     font-size: 1.5rem;
     font-weight: bold;
-}
+
 
 #alerta-modal p {
     padding: 1rem;

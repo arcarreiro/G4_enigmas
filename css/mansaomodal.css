@@ -1,0 +1,75 @@
+/* Fundo embaçado */
+#fundo-embaçado-mansao {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Efeito de embaçamento */
+    z-index: 999;
+}
+
+/* Modal de alerta */
+#alerta-modal-mansao {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cinza-ardosia);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 1000;
+    width: 35rem;
+}
+
+.conteudo-modal-mansao {
+    text-align: center;
+    align-items: center;
+}
+
+.header-modal {
+    color: var(--vermelho-sangue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#alerta-modal-mansao h2 {
+    margin: 0 0.5rem;
+    font-family: Inter;
+}
+
+#alerta-modal-mansao p {
+    padding: 1rem;
+    background-color: #f1e5cb;
+    width: 95%;
+    margin: 1rem 0;
+    color: black;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    align-self: center;
+}
+
+#seguir-aventura-mansao {
+    background-color: var(--padrao-botao);
+    border: var(--padrao-botao) 3px ridge;
+    padding: 8px;
+    border-color: #de9f20;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Inter';
+    font-size: large;
+}
+
+#fechar-modal-mansao {
+    border-radius: 50%;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+
+}

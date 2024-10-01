@@ -1,27 +1,19 @@
-
-.inter {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: italic;
+button {
+    background-color: var(--padrao-botao);
+    border: var(--padrao-botao) 3px ridge;
+    padding: 1px;
+    border-color: #de9f20;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Inter';
+    font-size:small;
+    height: 100%;
 }
 
-:root{
-    --cinza-escuro: #1C1C1C;
-    --cinza-ardosia: #2F2F2F;
-    --vermelho-sangue: #ff2525;
-    --cinza-metalico: #A9A9A9;
-    --azul-petroleo: #2F4F4F;
-    --roxo-escuro: #4B0082;
-    --padrao-botao: #672d21;
+.opcoes-praca button{
+    font-size: large;
+    width: fit-content;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 html, body {
     height: 100%;
@@ -43,11 +35,12 @@ header {
 }
 
 footer {
-    height: 5rem;
+    height: fit-content;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .container-geral {
@@ -85,27 +78,4 @@ footer {
     border-top-left-radius: 10px;
 }
 
-#cabecalho{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-    background-color: var(--cinza-ardosia);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: white;
-}
-
-.menu-superior{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    list-style-type: none;
-    margin-right: 1rem;
-    color:var(--vermelho-sangue);
-    font-size: x-large;
-}
 
