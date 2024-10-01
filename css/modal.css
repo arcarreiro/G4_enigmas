@@ -24,6 +24,7 @@
     border-radius: 10px;
     z-index: 1000;
     width: 70%;
+    max-height: 80%;
 }
 
 .conteudo-modal {
@@ -43,10 +44,10 @@
     font-family: Inter;
     font-size: 1.5rem;
     font-weight: bold;
+}
 
 
 #alerta-modal p {
-    padding: 1rem;
     background-color: #f1e5cb;
     width: 95%;
     margin: 1rem 0;
@@ -73,5 +74,4 @@
     padding: 0;
     width: 2rem;
     height: 2rem;
-}
 }

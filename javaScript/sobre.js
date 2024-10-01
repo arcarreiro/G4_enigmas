@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             nome: "Gustavo Fernandes",
-            descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
+            descricao: "Amante de esportes e em aprender coisas novas, sou estudante de programação e estou atualmente na residência TIC/Software do serratec.",
             github: '<a href="https://github.com/gustavofernandes0403" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
             linkedin: '<a href="https://www.linkedin.com/in/gustavo-fernandes77/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
         },

@@ -1,64 +1,4 @@
-button {
-    background-color: var(--padrao-botao);
-    border: var(--padrao-botao) 3px ridge;
-    padding: 1px;
-    border-color: #de9f20;
-    border-radius: 10px;
-    color: white;
-    font-family: 'Inter';
-    font-size:small;
-    height: 100%;
-}
-
-.opcoes-praca button{
-    font-size: large;
-    width: fit-content;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-body {
-    background-color: var(--cinza-escuro);
-    font-family: 'Inter';
-}
-
-header {
-    height: 8rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.container-geral {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container-imagem {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    overflow:hidden;
-}
+@import 'paginas.css';
 
 #praca {
     height: 100%;
@@ -78,4 +18,71 @@ footer {
     border-top-left-radius: 10px;
 }
 
+#fechar-modal-home {
+    border-radius: 50%;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+}
 
+#alerta-modal p {
+    padding: 1rem;
+    background-color: #f1e5cb;
+    width: 92%;
+    margin: 1rem 0;
+    color: black;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    align-self: center;
+}
+
+.imgLogo {
+    width: 40%;
+}
+
+#rolador {
+    text-transform: uppercase;
+    width: 13rem;
+    cursor: pointer;
+}
+
+#dado {
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    padding: 10px;
+    margin: 50px auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#dado h2 {
+    font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+    .opcoes-parquinho {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #dado {
+        margin: 10px auto;
+    }
+
+    #dado h2 {
+        font-size: 3rem;
+    }
+
+    #alerta-modal p {
+        width: 92%;
+        max-height: 7rem;
+        overflow: auto;
+    }
+
+    #opcoes-praca {
+        flex-wrap: wrap;
+    }
+
+}
