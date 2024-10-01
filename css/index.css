@@ -46,4 +46,10 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    #alerta-modal p{
+        width: 90%;
+        max-height: 55vh;
+    overflow: auto;
+    }
 }

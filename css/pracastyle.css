@@ -18,7 +18,7 @@
     border-top-left-radius: 10px;
 }
 
-#fechar-modal-home{
+#fechar-modal-home {
     border-radius: 50%;
     padding: 0;
     width: 2rem;
@@ -28,7 +28,7 @@
 #alerta-modal p {
     padding: 1rem;
     background-color: #f1e5cb;
-    width: 95%;
+    width: 92%;
     margin: 1rem 0;
     color: black;
     text-align: left;
@@ -49,24 +49,40 @@
 
 #dado {
     background-color: white;
-    height: 100px;
-    width: 100px;
-    padding: 50px;
+    height: 3rem;
+    width: 3rem;
+    padding: 10px;
     margin: 50px auto;
     border: 1px solid gray;
-    border-radius: 10px;
-    font-size:80px;
+    border-radius: 5px;
 }
 
-#dado h2 { 
-    font-size: 6rem;
+#dado h2 {
+    font-size: 4rem;
 }
 
 @media (max-width: 600px) {
-    .opcoes-parquinho{
+    .opcoes-parquinho {
         display: flex;
         flex-wrap: wrap;
     }
+
+    #dado {
+        margin: 10px auto;
+    }
+
+    #dado h2 {
+        font-size: 3rem;
+    }
+
+    #alerta-modal p {
+        width: 92%;
+        max-height: 7rem;
+        overflow: auto;
+    }
+
+    #opcoes-praca {
+        flex-wrap: wrap;
+    }
+
 }
-
-

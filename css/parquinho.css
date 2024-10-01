@@ -37,13 +37,31 @@
     align-self: center;
 }
 
+
 .imgLogo {
     width: 40%;
+}
+
+#fechar-modal-parquinho{
+    border-radius: 50%;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
 }
 
 @media (max-width: 600px) {
     .opcoes-parquinho{
         display: flex;
         flex-wrap: wrap;
+    }
+    .conteudo-modal {
+        text-align: center;
+        align-items: center;
+        width: 93%;
+    }
+
+    #alerta-modal p{
+        max-height: 60vh;
+        overflow: auto;
     }
 }

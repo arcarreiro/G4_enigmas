@@ -104,7 +104,7 @@ function adicionarEventos() {
             <strong>Escolha sua Rota...</strong><br><br>
             Você está no cemitério antigo de Corunas...
         </p>
-        <button id="parque">Ir para o parquinho</button>
+        <button id="parque" style= "margin: 1rem auto">Ir para o parquinho</button>
         <button id="mansao">Ir para a mansão</button>`;
 
         document.getElementById('parque').addEventListener('click', () => {
