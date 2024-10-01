@@ -7,8 +7,12 @@ button {
     color: white;
     font-family: 'Inter';
     font-size:small;
-    width: 120%;
     height: 100%;
+}
+
+.opcoes-praca button{
+    font-size: large;
+    width: fit-content;
 }
 
 html, body {

@@ -43,43 +43,71 @@ buttonBanco.addEventListener('mouseover', () => {
     fundoTela.src = imagemTransitoriaBanco;
 });
 
-buttonSair.addEventListener('mouseover', () => {
-    fundoTela.src = imagemFixa;
-});
-
 
 // volta à imagem normal
-button.addEventListener('mouseout', () => {
+buttonArvores.addEventListener('mouseout', () => {
     fundoTela.src = imagemFixa;
 });
 
+buttonFonte.addEventListener('mouseout', () => {
+    fundoTela.src = imagemFixa;
+});
 
-
+buttonBanco.addEventListener('mouseout', () => {
+    fundoTela.src = imagemFixa;
+});
 
 
 //modal
-document.addEventListener('DOMContentLoaded', function() {
-    const botaoAbrirAlerta = document.getElementById('arvores');
-    const botaoFecharAlerta = document.getElementById('fechar-modal-home');
-    const alertaModal = document.getElementById('alerta-modal');
-    const fundoEmbacado = document.getElementById('fundo-embaçado');
 
-    // Função para abrir o modal
-    function mostrarAlerta() {
-        alertaModal.style.display = 'block';
-        fundoEmbacado.style.display = 'block';
-    }
+const botaoFecharAlerta = document.getElementById('fechar-modal-home');
+const alertaModal = document.getElementById('alerta-modal');
+const fundoEmbacado = document.getElementById('fundo-embaçado');
 
-    // Função para fechar o modal
-    function fecharAlerta() {
-        alertaModal.style.display = 'none';
-        fundoEmbacado.style.display = 'none';
-    }
+// Função para abrir o modal
+function mostrarAlerta() {
+    alertaModal.style.display = 'block';
+    fundoEmbacado.style.display = 'block';
+}
 
-    // Eventos para abrir e fechar o modal
-    botaoAbrirAlerta.addEventListener('click', mostrarAlerta);
-    botaoFecharAlerta.addEventListener('click', fecharAlerta);
+// Função para fechar o modal
+function fecharAlerta() {
+    alertaModal.style.display = 'none';
+    fundoEmbacado.style.display = 'none';
+}
 
-    // Opcional: fechar o modal ao clicar fora da janela
-    fundoEmbacado.addEventListener('click', fecharAlerta);
-});
+// Eventos para abrir e fechar o modal
+
+botaoFecharAlerta.addEventListener('click', fecharAlerta);
+
+// Opcional: fechar o modal ao clicar fora da janela
+fundoEmbacado.addEventListener('click', fecharAlerta);
+
+buttonArvores.addEventListener('click', () => {
+    mostrarAlerta();
+    let texto = document.getElementById("conteudo-modal");
+    texto.innerHTML = `<p>Ao se esgueirar por entre as árvores, você avista um vulto se afastando apressadamente, que se assemelha à silhueta de uma pessoa. Role o dado para perseguir o suspeito.</p>`;
+
+}
+)
+
+buttonFonte.addEventListener('click', () => {
+    mostrarAlerta();
+    let texto = document.getElementById("conteudo-modal");
+    texto.innerHTML = `<p>A fonte, com sua água turva e musgo cobrindo partes das bordas, guarda mais do que aparenta. Ao se aproximar, você percebe algo gravado na pedra desgastada, quase escondido pelo tempo e pelo descuido. As palavras, difíceis de ler, parecem antigas e carregam um significado que você ainda não consegue compreender. A água escorre lentamente sobre a superfície, tornando a leitura ainda mais desafiadora. Você limpa parte da pedra e, aos poucos, as letras borradas começam a surgir, mas a mensagem ainda é fragmentada, uma mistura de símbolos e palavras enigmáticas.<br><br> Algo está escrito aqui... mas o que?</p>`;
+
+}
+)
+
+
+buttonBanco.addEventListener('click', () => {
+    mostrarAlerta();
+    let texto = document.getElementById("conteudo-modal");
+    texto.innerHTML = `<p>A escuridão os leva... O caminho é perdido para aqueles que não veem. Encontre a chave nas sombras, ou junte-se aos esquecidos.</p>`;
+
+}
+)
+
+
+let botaoModal=document.getElementById("seguir-aventura");
+botaoModal.addEventListener('click',fecharAlerta);
