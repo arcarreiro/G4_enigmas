@@ -83,7 +83,7 @@ function adicionarEventos() {
             fecharAlerta();
             document.getElementById('opcoes-home').innerHTML = `<button id="b-final">Encerrar</button>`;
             document.getElementById('b-final').addEventListener('click', () => {
-                    const PATHOME = '/index.html';
+                    const PATHOME = './index.html';
                     mostrarAlerta();
                     document.getElementById('conteudo-modal').innerHTML = `<p>
                     <strong>Morte inevitável...</strong><br><br>
