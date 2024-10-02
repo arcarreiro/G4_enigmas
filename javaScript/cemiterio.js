@@ -8,6 +8,9 @@ const botaoFecharAlerta = document.getElementById('fechar-modal-home');
 const alertaModal = document.getElementById('alerta-modal');
 const fundoEmbacado = document.getElementById('fundo-embaçado');
 
+botaoFecharAlerta.addEventListener('click', fecharAlerta);
+fundoEmbacado.addEventListener('click', fecharAlerta);
+
 // Função para mostrar o alerta
 function mostrarAlerta() {
     alertaModal.style.display = 'block'; // Mostra o modal
@@ -47,7 +50,6 @@ function adicionarEventos() {
             Quem, ou o que, poderia ter feito isso?
         </p>
         <button id="b-lapide">Verificar Lápide</button>`;
-
         document.getElementById('b-lapide').addEventListener('click', () => {
             fundoTela.src = '../assets/lapide.webp';
             document.getElementById('opcoes-home').innerHTML = `<button id="lapide-v">Voltar para entrada</button>`;
@@ -55,9 +57,9 @@ function adicionarEventos() {
             document.getElementById('lapide-v').addEventListener('click', () => {
                 fundoTela.src = imagemFixa;
                 document.getElementById('opcoes-home').innerHTML = `
-                    <button id="lapide">Investigar a Lápide</button>
-                    <button id="mausoleu">Explorar o Mausoléu</button>
-                    <button id="caminhos">Escolher caminhos</button>`;
+                <button id="lapide">Investigar a Lápide</button>
+                <button id="mausoleu">Explorar o Mausoléu</button>
+                <button id="caminhos">Escolher caminhos</button>`;
                 adicionarEventos(); // Reanexar eventos
             });
         });
@@ -80,7 +82,6 @@ function adicionarEventos() {
 
         document.getElementById('seguir-M').addEventListener('click', () => {
             fundoTela.src = '../assets/final2.webp';
-            fecharAlerta();
             document.getElementById('opcoes-home').innerHTML = `<button id="b-final">Encerrar</button>`;
             document.getElementById('b-final').addEventListener('click', () => {
                     const PATHOME = '../index.html';
@@ -100,13 +101,13 @@ function adicionarEventos() {
     // Eventos para escolher caminhos
     adicionarEvento(botaoCaminhos, 'click', () => {
         mostrarAlerta();
-        document.getElementById('conteudo-modal').innerHTML = `<p>
+        document.getElementById('conteudo-modal').innerHTML =
+        `<p>
             <strong>Escolha sua Rota...</strong><br><br>
             Você está no cemitério antigo de Corunas...
         </p>
         <button id="parque" style= "margin: 1rem auto">Ir para o parquinho</button>
         <button id="mansao">Ir para a mansão</button>`;
-        fecharAlerta();
         document.getElementById('parque').addEventListener('click', () => {
             window.location.href = '../pages/parquinho.html';
         });
