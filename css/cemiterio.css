@@ -20,6 +20,7 @@
 }
 
 #alerta-modal p {
+    padding: 1rem;
     background-color: #f1e5cb;
     width: 95%;
     margin: 1rem 0;
@@ -51,6 +52,10 @@
         width: 90%;
         max-height: 55vh;
         overflow: auto;
+    }
+
+    #opcoes-home{
+        flex-wrap: wrap;
     }
 }
 
