@@ -1,6 +1,11 @@
 /* Estilo geral */
 @import url('./cores.css');
 
+
+#botao-inutil {
+    display: none;
+}
+
 body {
     background-color: var(--cinza-escuro);
     font-family: 'Inter';
