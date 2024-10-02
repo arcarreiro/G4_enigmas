@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             nome: "Eber Cintra",
-            descricao: "Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.<br> Atualmente trabalha como desenvolvedor de software na empresa",
+            descricao: "Atualmente, estou cursando desenvolvimento full-stack. Sou formado como técnico em agropecuária e também atuo como intérprete de Libras. Tenho grande interesse por tecnologia e gosto de sempre aprender algo novo",
             github: '<a href="https://github.com/cintra444" target="_blank" rel="noopener noreferrer" aria-label="Github do desenvolvedor"><i class="bi bi-github" style="font-size: 55px; color:#B22222"></i></a>',
             linkedin: '<a href="https://www.linkedin.com/in/eber-cintra-261630246/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin do desenvolvedor"><i class="bi bi-linkedin" style="font-size: 55px; color:#B22222"></i></a>'
         },
